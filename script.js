@@ -1,6 +1,6 @@
 let captchaChecked = false;
 function beforeSubmit(event) {
-  if (!captchaChecked) {
+  if (captchaChecked) {
     const outputDate = document.querySelector(".outputdate");
     const inputDate = document.querySelector(".inputDate");
     console.log(inputDate.value);
